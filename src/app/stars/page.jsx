@@ -20,12 +20,19 @@ const RatingStars = () => {
       <h1 className='result'>Stars</h1>
       {GRADES.map((grade, index) => {
         if (index < rating) {
-          return <div onMouseLeave={() => resetRating()}>Yellow Star</div>;
+          return (
+            <div
+            // onMouseLeave={() => resetRating()}
+            >
+              Yellow Star
+            </div>
+          );
         } else {
           return (
             <button
               onClick={() => assignRating(index)}
-              onMouseEnter={() => assignRating(index)}>
+              // onMouseEnter={() => assignRating(index)}
+            >
               <Star key={index} />
             </button>
           );
