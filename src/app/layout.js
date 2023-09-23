@@ -1,4 +1,9 @@
 import './globals.css';
+import {
+  QueryClient,
+  QueryClientProvider,
+  useQuery,
+} from '@tanstack/react-query';
 
 export const metadata = {
   title: 'Create Next App',
@@ -8,8 +13,11 @@ export const metadata = {
 import Navbar from './components/navbar/page';
 import Footer from './components/footer/page';
 
+const queryClient = new QueryClient();
+
 export default function Layout({ children }) {
   return (
+    // <QueryClientProvider client={queryClient}>
     <html lang='en'>
       <body className='flex flex-col min-h-screen'>
         <Navbar />
@@ -17,5 +25,6 @@ export default function Layout({ children }) {
         <Footer />
       </body>
     </html>
+    // </QueryClientProvider>
   );
 }
