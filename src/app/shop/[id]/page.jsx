@@ -1,11 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import ProductImageCarousel from './ProductImageCarousel';
-import ProductInfo from './ProductInfo';
-import ColorOptions from './ColorOptions';
-import SizeOptions from './SizeOptions';
-import AddToCartButton from './AddToCartButton';
+import ProductImageCarousel from './productImageCarousel';
+import ProductInfo from './productInfo';
+import ColorOptions from './colorOptions';
+import SizeOptions from './sizeOptions';
+import AddToCartButton from './addToCartButton';
 
 const ProductPage = () => {
   const [selectedColor, setSelectedColor] = useState('');

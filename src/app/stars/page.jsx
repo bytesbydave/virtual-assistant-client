@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useRef, useEffect } from 'react';
-import Star from './Star';
+import Star from './star';
 import './star';
 
 const RatingStars = () => {
