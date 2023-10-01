@@ -9,6 +9,31 @@ const BuyOrder = () => {
     sellOrder: [],
   });
 
+  // const fetchBuyersAndSellers = async () => {
+  //   const buyersResponse = await axios.get("https://api.example.com/buyers");
+  //   setBuyers(buyersResponse.data);
+
+  //   const sellersResponse = await axios.get("https://api.example.com/sellers");
+  //   setSellers(sellersResponse.data);
+  // };
+
+  // const matchBuyersAndSellers = () => {
+  //   // Implement a matching algorithm here
+  //   // The algorithm should take the list of buyers and sellers as input and return a list of matches
+
+  //   // Here is an example of a simple matching algorithm:
+  //   const matches = [];
+  //   for (const buyer of buyers) {
+  //     for (const seller of sellers) {
+  //       if (buyer.maxPrice >= seller.minPrice) {
+  //         matches.push({ buyer, seller });
+  //       }
+  //     }
+  //   }
+
+  //   return matches;
+  // };
+
   const generateBuyOrder = () => {
     // setActiveOrderBook(0)
     const randomNum = Math.random();
