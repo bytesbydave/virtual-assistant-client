@@ -2,6 +2,7 @@ const GIPHY_API_KEY = process.env.GIPHY_API_KEY;
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  pageExtensions: ['js', 'jsx'],
   images: {
     remotePatterns: [
       {
