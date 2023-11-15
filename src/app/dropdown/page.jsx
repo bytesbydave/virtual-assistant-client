@@ -6,7 +6,7 @@ const Dropdown = ({ options, onChange, value, placeholder }) => {
 
   const toggleDropdown = useCallback(() => {
     setIsOpen(!isOpen);
-  }, []);
+  }, [isOpen]);
 
   const handleChange = useCallback(
     (item) => {
@@ -14,7 +14,7 @@ const Dropdown = ({ options, onChange, value, placeholder }) => {
       onChange(newValue);
       setIsOpen(!isOpen);
     },
-    [onChange]
+    [onChange, isOpen]
   );
 
   const handleKeyPress = useCallback(
