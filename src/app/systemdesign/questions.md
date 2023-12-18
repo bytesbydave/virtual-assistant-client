@@ -198,58 +198,56 @@
 55. **Is there any reason you'd want to use `translate()` instead of `absolute` positioning, or vice-versa? And why?**
     `translate()` is used for smooth animations without affecting layout, while `absolute` positioning is used for precise layout control. The choice depends on the specific design requirements.
 
-56. \*\*What are the pros and
+56. **What are the pros and cons of using Promises instead of callbacks?**
+    Pros of Promises include better readability, error handling, and avoiding callback hell. Cons include potential unhandled promise rejections and increased complexity for simple tasks.
 
-cons of using Promises instead of callbacks?\*\*
-Pros of Promises include better readability, error handling, and avoiding callback hell. Cons include potential unhandled promise rejections and increased complexity for simple tasks.
-
-26. **What is a closure, and how/why would you use one?**
+57. **What is a closure, and how/why would you use one?**
     A closure is a function that "closes over" variables from its outer scope, preserving their values. Closures are used to create private variables, implement data encapsulation, and maintain state in functional programming.
 
-27. **What is event loop?**
+58. **What is event loop?**
     The event loop is a core concept in JavaScript, responsible for handling asynchronous operations by continuously checking the message queue and executing tasks in a non-blocking manner.
 
-28. **What language constructions do you use for iterating over object properties and array items?**
+59. **What language constructions do you use for iterating over object properties and array items?**
 
     - For objects: `for...in` loop or `Object.keys()`, `Object.values()`, `Object.entries()`.
     - For arrays: `for...of` loop, `forEach()`, `map()`, `filter()`, etc.
 
-29. **What's a typical use case for anonymous functions?**
+60. **What's a typical use case for anonymous functions?**
     Anonymous functions are often used as arguments for higher-order functions or for short-lived, one-time-use functions where naming is unnecessary.
 
-30. **Describe Block Formatting Context (BFC) and how it works.**
+61. **Describe Block Formatting Context (BFC) and how it works.**
     BFC is a part of the visual formatting model in CSS. It defines how elements in a document are laid out and how they interact with each other, providing control over layout and preventing certain layout issues.
 
-31. **Describe `float`s and how they work.**
+62. **Describe `float`s and how they work.**
     `float` is a CSS property used for text wrapping around images or elements. It removes an element from the normal document flow, causing surrounding elements to flow around it.
 
-32. **Describe pseudo-elements and discuss what they are used for.**
+63. **Describe pseudo-elements and discuss what they are used for.**
     Pseudo-elements in CSS represent a specific part of an element. Examples include `::before` and `::after`, often used for adding decorative content or styling specific parts of an element.
 
-33. **Describe `z-index` and how stacking context is formed.**
+64. **Describe `z-index` and how stacking context is formed.**
     `z-index` in CSS controls the stacking order of positioned elements. Stacking context is formed when an element has a `position` value other than `static` and a `z-index` value other than `auto`.
 
-34. **What kind of things must you be wary of when designing or developing for multilingual sites?**
+65. **What kind of things must you be wary of when designing or developing for multilingual sites?**
     Consideration should be given to text expansion/contraction, cultural nuances, right-to-left languages, and the use of proper language attributes. Ensure proper encoding, avoid hardcoding text, and allow for easy content translation.
 
-35. **Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?**
+66. **Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?**
 
     - `function Person(){}`: Function declaration.
     - `var person = Person()`: Invokes the function but assigns its return value, which may be `undefined`.
     - `var person = new Person()`: Instantiates an object using the `Person` constructor.
 
-36. **Explain Ajax in as much detail as possible.**
+67. **Explain Ajax in as much detail as possible.**
     Ajax (Asynchronous JavaScript and XML) is a technique for making asynchronous requests to a server from a web page. It allows data to be exchanged with the server without a full page reload, enhancing the user experience.
 
-37. **Explain CSS sprites, and how you would implement them on a page or site.**
+68. **Explain CSS sprites, and how you would implement them on a page or site.**
     CSS sprites combine multiple images into a single image to reduce the number of server requests. They are implemented by setting the background image and adjusting the background position for individual elements.
 
-38. **Explain how JSONP works (and how it's not really Ajax).**
+69. **Explain how JSONP works (and how it's not really Ajax).**
     JSONP (JSON with Padding) is a technique for making cross-domain requests using `<script>` tags. It works by dynamically adding a script tag to the document, with the source pointing to a server that returns data wrapped in a callback function. It's not Ajax in the traditional sense as it doesn't use XMLHttpRequest.
 
-39. **Explain the difference between mutable and immutable objects.**
+70. **Explain the difference between mutable and immutable objects.**
     Mutable objects can be modified after creation, while immutable objects cannot be changed. In JavaScript, primitive data types (e.g., numbers, strings) are immutable, while objects (arrays, objects) are mutable.
 
-40. **Explain the differences in the usage of `foo` between `function foo() {}` and `var foo = function() {}`.**
+71. **Explain the differences in the usage of `foo` between `function foo() {}` and `var foo = function() {}`.**
     - `function foo() {}`: Function declaration; `foo` is hoisted and can be called before its declaration.
     - `var foo = function() {}`: Function expression; `foo` is assigned the function and is not hoisted.
